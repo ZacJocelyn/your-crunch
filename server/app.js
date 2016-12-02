@@ -1,8 +1,9 @@
 var express = require('express')
 var app = express();
 var bodyParser = require('body-parser')
+var cors = require('cors')
 app.use(bodyParser.json())
-
+app.use(cors())
 app.listen(3000, function () {
   console.log('listening on port 3000');
 })
